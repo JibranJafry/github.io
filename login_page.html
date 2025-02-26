@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Simulation</title>
+    <script type="text/javascript">
+        function redirectToApp() {
+            // Replace 'myapp' with your app's custom URL scheme
+            var customURL = 'myapp://paymentSuccess?transactionId=12345&status=success';
+            window.location.href = customURL;
+        }
+    </script>
+</head>
+<body>
+    <h1>Payment Page</h1>
+    <p>Click the button below to simulate a payment and return to the app.</p>
+    <button onclick="redirectToApp()">Pay</button>
+</body>
+</html>
