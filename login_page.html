@@ -58,7 +58,7 @@
                 errorMessage.innerText = "";
             }
             
-            var url = `intent://paymentSuccess?transactionId=${transactionId}&status=${status}#Intent;scheme=KonyMobileBankin;package=com.BankSoharMB;end`;
+            var url = `intent://paymentSuccess?transactionId=${transactionId}&status=${status}&frmName=frmPOCPayment#Intent;scheme=KonyMobileBankin;package=com.BankSoharMB;end`;
             window.location.href = url;
         }
     </script>
