@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,5 +15,19 @@
     <h1>Payment Page</h1>
     <p>Click the button below to simulate a payment and return to the app.</p>
     <button onclick="redirectToApp()">Pay</button>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open App</title>
+</head>
+<body>
+    <a href="KonyMobileBankin://paymentSuccess?transactionId=12345&status=success">Open App</a>
+    <br>
+    <a href="intent://paymentSuccess?transactionId=12345&status=success#Intent;scheme=KonyMobileBankin;package=com.yourapp.package;end">Open App via Intent</a>
 </body>
 </html>
