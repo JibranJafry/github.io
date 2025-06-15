@@ -51,12 +51,12 @@
             var status = document.getElementById('status').value.trim();
             var errorMessage = document.getElementById('errorMessage');
             
-            if (transactionId === "" || status === "") {
-                errorMessage.innerText = "Please enter both Transaction ID and Status.";
-                return;
-            } else {
-                errorMessage.innerText = "";
-            }
+            // if (transactionId === "" || status === "") {
+            //     errorMessage.innerText = "Please enter both Transaction ID and Status.";
+            //     return;
+            // } else {
+            //     errorMessage.innerText = "";
+            // }
             
             var url = `intent://paymentSuccess?transactionId=${transactionId}&status=${status}&frmName=frmPOCPayment#Intent;scheme=KonyMobileBankin;package=com.BankSoharMB;end`;
             window.location.href = url;
@@ -65,10 +65,11 @@
 </head>
 <body>
     <h1>Open Sohar International</h1>
-    <input type="text" id="transactionId" class="input-field" placeholder="Enter Transaction ID">
-    <input type="text" id="status" class="input-field" placeholder="Enter Status">
-    <p id="errorMessage" class="error"></p>
-    <button onclick="redirectToApp()" class="btn">Redirect to App</button>
+<!--     <input type="text" id="transactionId" class="input-field" placeholder="Enter Transaction ID">
+    <input type="text" id="status" class="input-field" placeholder="Enter Status"> -->
+<!--     <p id="errorMessage" class="error"></p> -->
+    <button onclick="redirectToApp()" class="btn">Redirect to Payment</button>
+    <button onclick="redirectToApp()" class="btn">Redirect to Home</button>
 </body>
 </html>
 
