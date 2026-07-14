@@ -59,8 +59,9 @@
             }
             
             // var url = `intent://paymentSuccess?transactionId=${transactionId}&frmName=frmPOCPayment&status=${status}#Intent;scheme=KonyMobileBankin;package=com.BankSoharMB;end`;
-            var url = `intent://ROPToSohar&frmName=frmUpdatePhoneAndEmail#Intent;scheme=SoharMobileBanking;package=com.BankSoharMB;end`;
-            // var url = `soharmobilebanking://paymentSuccess?frmName=frmUpdatePhoneAndEmail`
+            // var url = `intent://ROPToSohar&frmName=frmUpdatePhoneAndEmail#Intent;scheme=SoharMobileBanking;package=com.BankSoharMB;end`;
+            var url = `SoharMobileBanking://ROPToSohar?frmName=frmUpdatePhoneAndEmail`;
+            // SoharMobileBanking://ROPToSohar?trandId=<encrypted tranId>
             window.location.href = url;
         }
     </script>
